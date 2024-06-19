@@ -1,24 +1,53 @@
-<html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Weather Forecast
-        </title>
-        <link rel="stylesheet" href="style.css">
-        </head>
-        <body>
-        <div id="weather-info">
-        <h1>Current Weather</h1>
-        <p>Temperature:<span id="temperature">....</span>°C</p>
-        <p>Humidity:<span id="humidity">....</span>%</p>
-        <p>Wind Speed:<span id="wind-speed">...</span>km/h</p>
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Enter city name" spellcheck="false">
+            <button><img src="./images/search.png" alt=""></button>
         </div>
-        <div id="container">
-        <h1>weather forecast </h1>
-        <input type="text" id="locatiobn-input" placeholder="enter city or zip code">
-        <Button on click="searchweather()">Search</button>
+        <div class="error">
+            <p>Invalid city name</p>
         </div>
-        <script src="script.js"></script>
-        </body>
-        </html>
+        <div class="weather">
+            <img class="weather-icon" src="images/rain.png" alt="">
+            <h1 class="temp">22°c</h1>
+            <h2 class="city">New Delhi</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="images/humidity.png" alt="">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="images/wind.png" alt="">
+                    <div>
+                        <p class="wind">15 km/h</p>
+                        <p>wind speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
